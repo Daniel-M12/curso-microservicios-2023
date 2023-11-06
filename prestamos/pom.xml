@@ -115,7 +115,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<image>
-						<name>jcabelloc/${project.artifactId}:${project.version}</name>
+						<name>dmatos/${project.artifactId}:${project.version}</name>
 					</image>
 					<excludes>
 						<exclude>

@@ -4,9 +4,9 @@ propiedad:
 
 spring:
   datasource:
-    url: jdbc:mysql://192.168.1.115:3306/prestamos
+    url: jdbc:mysql://172.20.10.11:3306/prestamos
     username: prestamos
-    password: '{cipher}8110111cb5e8229f63158584da85131166a88678adc6611d855bcbc4fe6481be'
+    password: '{cipher}307dd03b1615cfefcf98db707774ede0df6604bf535a8022fd444af765224a2e'
 
 eureka:
   client:

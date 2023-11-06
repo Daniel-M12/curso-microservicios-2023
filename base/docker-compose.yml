@@ -2,7 +2,7 @@ version: '3'
 
 services:
   configuration-service:
-    image: jcabelloc/configuration-service:0.0.1-SNAPSHOT
+    image: dmatos/configuration-service:0.0.1-SNAPSHOT
     ports:
       - "8888:8888"
     environment:
@@ -11,7 +11,7 @@ services:
     volumes:
       - ./config:/config
   eureka-service:
-    image: jcabelloc/eureka-service:0.0.1-SNAPSHOT
+    image: dmatos/eureka-service:0.0.1-SNAPSHOT
     ports:
       - "8761:8761"
     environment:
@@ -19,7 +19,7 @@ services:
     depends_on:
       - configuration-service
   clientes:
-    image: jcabelloc/clientes:0.0.1-SNAPSHOT
+    image: dmatos/clientes:0.0.1-SNAPSHOT
     ports:
       - "8081:8081"
     environment:
@@ -28,7 +28,7 @@ services:
     depends_on:
       - eureka-service
   prestamos:
-    image: jcabelloc/prestamos:0.0.1-SNAPSHOT
+    image: dmatos/prestamos:0.0.1-SNAPSHOT
     ports:
       - "8082:8082"
     environment:
