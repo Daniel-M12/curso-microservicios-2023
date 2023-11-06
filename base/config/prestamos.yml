@@ -52,3 +52,9 @@ resilience4j.retry:
     clientes:
       maxAttempts: 3
       waitDuration: 1s
+
+# Configuracion de bulkhead
+resilience4j.bulkhead:
+  instances:
+    prestamos:
+      maxConcurrentCalls: 2
